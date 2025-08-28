@@ -1,0 +1,220 @@
+  body {
+      background: linear-gradient(100deg, #66ea71 0%, #e9da7e 100%);
+      /* background-image: url(./img/山.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; */
+      min-height: 100vh;
+      font-family: 'Microsoft JhengHei', sans-serif;
+      /*設定文字字型為 微軟正黑體*/
+  }
+
+  .weather-card {
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+  }
+
+  .weather-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-header {
+      background: linear-gradient(45deg, #4facfe, #b200fe);
+      color: white;
+      font-weight: bold;
+      border-bottom: none;
+  }
+
+  .temperature {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+  }
+
+  .weather-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+  }
+
+  .sunny {
+      color: #ffa500;
+  }
+
+  .cloudy {
+      color: #87ceeb;
+  }
+
+  .rainy {
+      color: #4682b4;
+  }
+
+  .filter-section {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+  }
+
+  .main-title {
+      color: black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+  }
+
+  .main-title i {
+      color: white;
+      margin-right: 10px;
+  }
+
+  .no-data {
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 50px 0;
+  }
+
+  .form-select {
+      width: auto;
+      min-width: 200px;
+  }
+
+  /* 平板設備 (768px - 1024px) */
+  @media (max-width: 1024px) {
+      .temperature {
+          font-size: 2.2rem;
+      }
+
+      .weather-icon {
+          font-size: 2.5rem;
+      }
+
+      .filter-section {
+          padding: 15px;
+      }
+  }
+
+  /* 手機橫屏 (576px - 767px) */
+  @media (max-width: 767px) {
+      .main-title {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+      }
+
+      .temperature {
+          font-size: 2rem;
+      }
+
+      .weather-icon {
+          font-size: 2.2rem;
+          margin-bottom: 10px;
+      }
+
+      .filter-section {
+          padding: 15px;
+          margin-bottom: 20px;
+      }
+
+      .weather-card {
+          margin-bottom: 15px;
+      }
+
+      .card-body {
+          padding: 1rem 0.75rem;
+      }
+
+      .form-select {
+          min-width: 150px;
+      }
+  }
+
+  /* 手機直屏 (最大 575px) */
+  @media (max-width: 575px) {
+      .container {
+          padding: 15px;
+      }
+
+      .main-title {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+      }
+
+      .main-title i {
+          display: block;
+          margin: 0 0 10px 0;
+      }
+
+      .temperature {
+          font-size: 1.8rem;
+      }
+
+      .weather-icon {
+          font-size: 2rem;
+      }
+
+      .filter-section {
+          padding: 12px;
+          margin-bottom: 15px;
+      }
+
+      .form-label {
+          font-size: 0.9rem;
+      }
+
+      .card-header h5 {
+          font-size: 1rem;
+      }
+
+      .card-body {
+          padding: 0.75rem 0.5rem;
+      }
+
+      .row.text-start {
+          font-size: 0.8rem;
+      }
+
+      .card-footer {
+          padding: 0.5rem;
+          font-size: 0.8rem;
+      }
+
+      .no-data {
+          font-size: 1rem;
+          margin: 30px 0;
+      }
+
+      .no-data i {
+          font-size: 2rem;
+      }
+
+      .form-select {
+          min-width: 120px;
+      }
+  }
+
+  /* 超小手機設備 (最大 375px) */
+  @media (max-width: 375px) {
+      .main-title {
+          font-size: 1.3rem;
+      }
+
+      .temperature {
+          font-size: 1.6rem;
+      }
+
+      .weather-icon {
+          font-size: 1.8rem;
+      }
+
+      .card-body {
+          padding: 0.5rem;
+      }
+
+      .filter-section {
+          padding: 10px;
+      }
+  }
